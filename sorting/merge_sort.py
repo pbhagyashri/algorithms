@@ -10,8 +10,6 @@ def merge(arr, start, end):
   # recursively call the merge function on the right half
   merge(arr, mid+1, end)
 
-  print('start:', start, end)
-
   i = start
   j = mid + 1
   aux = []
