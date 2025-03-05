@@ -2,7 +2,7 @@ def insertion_sort(a):
   for i in range(1, len(a)):
     # store ith element in the array in a temporary veriable
     temp = a[i]
-    # store the element before it in another variable, j
+    # start the pointer at 1 index before i.
     j = i - 1
 
     # if j is greater or equal to 0, do the folowoing steps

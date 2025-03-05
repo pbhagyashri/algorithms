@@ -5,6 +5,7 @@ def merge(arr, start, end):
   
   # calulate mid point
   mid = (start + end) // 2
+  # print(start, end, mid)
   # recursively call the merge function on the left half
   merge(arr, start, mid)
   # recursively call the merge function on the right half
@@ -13,15 +14,16 @@ def merge(arr, start, end):
   i = start
   j = mid + 1
   aux = []
-
+  
+  # combine subarrays
   while i <= mid and j <= end:
-    print('i:', i, j)
     if arr[i] <= arr[j]:
       aux.append(arr[i])
       i += 1
     else:
       aux.append(arr[j])
       j += 1
+
   while i <= mid:
     aux.append(arr[i])
     i += 1
